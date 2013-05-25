@@ -6,6 +6,7 @@ import android.view.Menu;
 
 import android.webkit.WebView;
 import android.webkit.WebSettings;
+import android.webkit.WebChromeClient;
 
 public class MainActivity extends Activity {
 
@@ -18,6 +19,8 @@ public class MainActivity extends Activity {
 
         WebSettings ws = wv.getSettings();
         ws.setJavaScriptEnabled(true);
+
+        wv.setWebChromeClient(new WebChromeClient());
 
         wv.loadUrl("file:///android_asset/index.html");
     }
