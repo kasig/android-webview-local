@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 
 import android.webkit.WebView;
+import android.webkit.WebSettings;
 
 public class MainActivity extends Activity {
 
@@ -14,6 +15,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         WebView wv = (WebView) findViewById(R.id.webview);
+
+        WebSettings ws = wv.getSettings();
+        ws.setJavaScriptEnabled(true);
+
         wv.loadUrl("file:///android_asset/index.html");
     }
 
