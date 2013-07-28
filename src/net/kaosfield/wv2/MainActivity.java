@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 		
 	}
 
-	// バックキーが押されたもアプリを終了しない
+	// バックキーが押されてもアプリを終了しない
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
