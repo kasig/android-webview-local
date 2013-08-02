@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WebView wv = (WebView) findViewById(R.id.webview);
+        WebView wv = (WebView) findViewById(R.id.webView1);
 
         WebSettings ws = wv.getSettings();
         ws.setJavaScriptEnabled(true);
